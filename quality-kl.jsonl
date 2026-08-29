@@ -1,0 +1,8 @@
+{"label": "fp8", "role": "referenz", "positions": {"de_prosa": 78, "code": 88, "fakten": 47}}
+{"label": "nvfp4", "text": "de_prosa", "positions": 78, "top1_agree": 0.9359, "kl_mean": 0.04336, "kl_p95": 0.10983}
+{"label": "nvfp4", "text": "code", "positions": 88, "top1_agree": 1.0, "kl_mean": 0.00283, "kl_p95": 0.01756}
+{"label": "nvfp4", "text": "fakten", "positions": 47, "top1_agree": 0.9149, "kl_mean": 0.01815, "kl_p95": 0.0477}
+{"label": "awq", "text": "de_prosa", "positions": 78, "top1_agree": 0.9231, "kl_mean": 0.02952, "kl_p95": 0.10151}
+{"label": "awq", "text": "code", "positions": 88, "top1_agree": 1.0, "kl_mean": 0.0018, "kl_p95": 0.00781}
+{"label": "awq", "text": "fakten", "positions": 47, "top1_agree": 0.9149, "kl_mean": 0.01413, "kl_p95": 0.04631}
+QUALITY FERTIG

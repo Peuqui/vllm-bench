@@ -1,0 +1,3 @@
+{"label": "quality-llamacpp-27b-q8", "test": "math", "pass": true, "tail": "n \\(16\\) are\n\n\\[\n28,\\ 56.\n\\]\n\nThus\n\n\\[\nb+7=28 \\implies b=21\n\\]\n\nor\n\n\\[\nb+7=56 \\implies b=49.\n\\]\n\nThe sum of all such bases is\n\n\\[\n21+49=70.\n\\]\n\n\\[\n\\boxed{70}\n\\]"}
+{"label": "quality-llamacpp-27b-q8", "test": "diversity", "distinct": 4, "n": 20, "sample": ["ibm thinkpad", "intel pentium", "intel pentium processor", "pentium"]}
+# quality-llamacpp-27b-q8: math=PASS, Diversitaet 4/20

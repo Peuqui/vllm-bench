@@ -1,0 +1,12 @@
+{"completion_tokens": 931, "ttft_s": 1.315, "decode_s": 17.907, "decode_tok_s": 51.9, "cell": "math", "seed": 1001, "label": "upstream-mtp7-rtx8000", "profile": "ninfer"}
+{"completion_tokens": 693, "ttft_s": 0.306, "decode_s": 13.297, "decode_tok_s": 52.0, "cell": "math", "seed": 2002, "label": "upstream-mtp7-rtx8000", "profile": "ninfer"}
+{"completion_tokens": 1004, "ttft_s": 0.306, "decode_s": 19.903, "decode_tok_s": 50.4, "cell": "math", "seed": 3003, "label": "upstream-mtp7-rtx8000", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.308, "decode_s": 112.133, "decode_tok_s": 36.5, "cell": "code", "seed": 1001, "label": "upstream-mtp7-rtx8000", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.242, "decode_s": 121.177, "decode_tok_s": 33.8, "cell": "code", "seed": 2002, "label": "upstream-mtp7-rtx8000", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.339, "decode_s": 142.533, "decode_tok_s": 28.7, "cell": "code", "seed": 3003, "label": "upstream-mtp7-rtx8000", "profile": "ninfer"}
+{"completion_tokens": 3307, "ttft_s": 0.235, "decode_s": 71.019, "decode_tok_s": 46.6, "cell": "prose", "seed": 1001, "label": "upstream-mtp7-rtx8000", "profile": "ninfer"}
+{"completion_tokens": 3044, "ttft_s": 0.33, "decode_s": 64.727, "decode_tok_s": 47.0, "cell": "prose", "seed": 2002, "label": "upstream-mtp7-rtx8000", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.327, "decode_s": 92.288, "decode_tok_s": 44.4, "cell": "prose", "seed": 3003, "label": "upstream-mtp7-rtx8000", "profile": "ninfer"}
+# upstream-mtp7-rtx8000 math: 51.4 ± 0.8 tok/s (n=3)
+# upstream-mtp7-rtx8000 code: 33.0 ± 3.9 tok/s (n=3)
+# upstream-mtp7-rtx8000 prose: 46.0 ± 1.3 tok/s (n=3)

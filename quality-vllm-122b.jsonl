@@ -1,0 +1,3 @@
+{"label": "quality-vllm-122b-gptq", "test": "math", "pass": true, "tail": "9$:\n$17_{49} = 49 + 7 = 56$.\n$97_{49} = 9(49) + 7 = 441 + 7 = 448$.\n$448 \\div 56 = 8$, which is an integer. So $56 \\mid 448$.\n\nThe sum of the bases is $70$.\n\n70"}
+{"label": "quality-vllm-122b-gptq", "test": "diversity", "distinct": 6, "n": 20, "sample": ["imac g3", "intel pentium", "intel pentium processor", "pentium", "pentium processor", "playstation"]}
+# quality-vllm-122b-gptq: math=PASS, Diversitaet 6/20

@@ -1,0 +1,210 @@
+(APIServer pid=3509209) INFO 08-24 12:16:43 [api_utils.py:345] 
+(APIServer pid=3509209) INFO 08-24 12:16:43 [api_utils.py:345]        █     █     █▄   ▄█
+(APIServer pid=3509209) INFO 08-24 12:16:43 [api_utils.py:345]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.27.1
+(APIServer pid=3509209) INFO 08-24 12:16:43 [api_utils.py:345]   █▄█▀ █     █     █     █  model   cyankiwi/Qwen3.8-27B-AWQ-INT4
+(APIServer pid=3509209) INFO 08-24 12:16:43 [api_utils.py:345]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=3509209) INFO 08-24 12:16:43 [api_utils.py:345] 
+(APIServer pid=3509209) INFO 08-24 12:16:43 [api_utils.py:273] non-default args: {'host': '127.0.0.1', 'port': 8030, 'model': 'cyankiwi/Qwen3.8-27B-AWQ-INT4', 'dtype': 'float16', 'max_model_len': 16384, 'served_model_name': ['qwen38-27b-awq'], 'max_num_seqs': 1}
+(APIServer pid=3509209) INFO 08-24 12:16:43 [arg_utils.py:805] HF_HUB_OFFLINE is True, replace model_id [cyankiwi/Qwen3.8-27B-AWQ-INT4] to model_path [/home/mp/.cache/huggingface/hub/models--cyankiwi--Qwen3.8-27B-AWQ-INT4/snapshots/63768c10df38c0395e12ef49edac1bd539eaeeea]
+(APIServer pid=3509209) INFO 08-24 12:16:52 [model.py:645] Resolved architecture: Qwen3_5ForConditionalGeneration
+(APIServer pid=3509209) WARNING 08-24 12:16:52 [model.py:2217] Casting torch.bfloat16 to torch.float16.
+(APIServer pid=3509209) INFO 08-24 12:16:52 [model.py:1883] Using max model len 16384
+(APIServer pid=3509209) /home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU0 Tesla V100-PCIE-32GB which is of compute capability (CC) 7.0.
+(APIServer pid=3509209) The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+(APIServer pid=3509209) - 7.5 which supports hardware CC >=7.5,<8.0
+(APIServer pid=3509209) - 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+(APIServer pid=3509209) - 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+(APIServer pid=3509209) - 9.0 which supports hardware CC >=9.0,<10.0
+(APIServer pid=3509209) - 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+(APIServer pid=3509209) - 12.0 which supports hardware CC >=12.0,<13.0
+(APIServer pid=3509209) Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+(APIServer pid=3509209)   For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+(APIServer pid=3509209)   _warn_unsupported_code(d, device_cc, code_ccs)
+(APIServer pid=3509209) [ERROR] `min_frames` is part of Qwen3VLVideoProcessorInitKwargs, but not documented. Make sure to add it to the docstring of the function in /home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/transformers/models/qwen3_vl/video_processing_qwen3_vl.py.
+(APIServer pid=3509209) [ERROR] `max_frames` is part of Qwen3VLVideoProcessorInitKwargs, but not documented. Make sure to add it to the docstring of the function in /home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/transformers/models/qwen3_vl/video_processing_qwen3_vl.py.
+(APIServer pid=3509209) INFO 08-24 12:16:53 [kernel.py:306] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])
+(APIServer pid=3509209) [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+(EngineCore pid=3510164) INFO 08-24 12:17:07 [core.py:121] Initializing a V1 LLM engine (v0.27.1) with config: model='/home/mp/.cache/huggingface/hub/models--cyankiwi--Qwen3.8-27B-AWQ-INT4/snapshots/63768c10df38c0395e12ef49edac1bd539eaeeea', speculative_config=None, tokenizer='/home/mp/.cache/huggingface/hub/models--cyankiwi--Qwen3.8-27B-AWQ-INT4/snapshots/63768c10df38c0395e12ef49edac1bd539eaeeea', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=compressed-tensors, quantization_config=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=qwen38-27b-awq, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::qwen_gdn_attention_core', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [2048], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 2, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, enable_bf16x3_router_gemm=False, moe_backend='auto', linear_backend='auto')
+(EngineCore pid=3510164) /home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU0 Tesla V100-PCIE-32GB which is of compute capability (CC) 7.0.
+(EngineCore pid=3510164) The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+(EngineCore pid=3510164) - 7.5 which supports hardware CC >=7.5,<8.0
+(EngineCore pid=3510164) - 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+(EngineCore pid=3510164) - 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+(EngineCore pid=3510164) - 9.0 which supports hardware CC >=9.0,<10.0
+(EngineCore pid=3510164) - 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+(EngineCore pid=3510164) - 12.0 which supports hardware CC >=12.0,<13.0
+(EngineCore pid=3510164) Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+(EngineCore pid=3510164)   For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+(EngineCore pid=3510164)   _warn_unsupported_code(d, device_cc, code_ccs)
+(EngineCore pid=3510164) [ERROR] `min_frames` is part of Qwen3VLVideoProcessorInitKwargs, but not documented. Make sure to add it to the docstring of the function in /home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/transformers/models/qwen3_vl/video_processing_qwen3_vl.py.
+(EngineCore pid=3510164) [ERROR] `max_frames` is part of Qwen3VLVideoProcessorInitKwargs, but not documented. Make sure to add it to the docstring of the function in /home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/transformers/models/qwen3_vl/video_processing_qwen3_vl.py.
+(EngineCore pid=3510164) INFO 08-24 12:17:08 [parallel_state.py:1640] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://192.168.0.249:36677 backend=nccl
+(EngineCore pid=3510164) INFO 08-24 12:17:08 [parallel_state.py:1977] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=3510164) WARNING 08-24 12:17:10 [topk_topp_sampler.py:69] FlashInfer top-p/top-k sampling unavailable: unsupported compute capability 7.0; falling back. Set VLLM_USE_FLASHINFER_SAMPLER=0 to silence.
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349] EngineCore failed to start.
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349] Traceback (most recent call last):
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1318, in run_engine_core
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     return func(*args, **kwargs)
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1074, in __init__
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     super().__init__(
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 132, in __init__
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     return func(*args, **kwargs)
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/executor/abstract.py", line 109, in __init__
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     self._init_executor()
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/executor/uniproc_executor.py", line 63, in _init_executor
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     self.driver_worker.init_device()
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/worker_base.py", line 331, in init_device
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     self.worker.init_device()  # type: ignore
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     ^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     return func(*args, **kwargs)
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 423, in init_device
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     self.model_runner = GPUModelRunnerV1(self.vllm_config, self.device)
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/gpu_model_runner.py", line 704, in __init__
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     self.input_batch = InputBatch(
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]                        ^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/gpu_input_batch.py", line 186, in __init__
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     self.block_table = MultiGroupBlockTable(
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]                        ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/block_table.py", line 316, in __init__
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     BlockTable(
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/block_table.py", line 105, in __init__
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     self.block_table = self._make_buffer(
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]                        ^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/block_table.py", line 265, in _make_buffer
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     return CpuGpuBuffer(
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]            ^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/utils.py", line 126, in __init__
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]     self.gpu = torch.zeros_like(self.cpu, device=device)
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349] torch.AcceleratorError: CUDA error: no kernel image is available for execution on the device
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349] Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349] For more detailed error information, run with CUDA_LOG_FILE=stderr
+(EngineCore pid=3510164) ERROR 08-24 12:17:10 [core.py:1349] 
+(EngineCore pid=3510164) Process EngineCore:
+(EngineCore pid=3510164) Traceback (most recent call last):
+(EngineCore pid=3510164)   File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+(EngineCore pid=3510164)     self.run()
+(EngineCore pid=3510164)   File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+(EngineCore pid=3510164)     self._target(*self._args, **self._kwargs)
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1353, in run_engine_core
+(EngineCore pid=3510164)     raise e
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1318, in run_engine_core
+(EngineCore pid=3510164)     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=3510164)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=3510164)     return func(*args, **kwargs)
+(EngineCore pid=3510164)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 1074, in __init__
+(EngineCore pid=3510164)     super().__init__(
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core.py", line 132, in __init__
+(EngineCore pid=3510164)     self.model_executor = executor_class(vllm_config)
+(EngineCore pid=3510164)                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=3510164)     return func(*args, **kwargs)
+(EngineCore pid=3510164)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/executor/abstract.py", line 109, in __init__
+(EngineCore pid=3510164)     self._init_executor()
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/executor/uniproc_executor.py", line 63, in _init_executor
+(EngineCore pid=3510164)     self.driver_worker.init_device()
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/worker_base.py", line 331, in init_device
+(EngineCore pid=3510164)     self.worker.init_device()  # type: ignore
+(EngineCore pid=3510164)     ^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=3510164)     return func(*args, **kwargs)
+(EngineCore pid=3510164)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/gpu_worker.py", line 423, in init_device
+(EngineCore pid=3510164)     self.model_runner = GPUModelRunnerV1(self.vllm_config, self.device)
+(EngineCore pid=3510164)                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/gpu_model_runner.py", line 704, in __init__
+(EngineCore pid=3510164)     self.input_batch = InputBatch(
+(EngineCore pid=3510164)                        ^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/gpu_input_batch.py", line 186, in __init__
+(EngineCore pid=3510164)     self.block_table = MultiGroupBlockTable(
+(EngineCore pid=3510164)                        ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/block_table.py", line 316, in __init__
+(EngineCore pid=3510164)     BlockTable(
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/block_table.py", line 105, in __init__
+(EngineCore pid=3510164)     self.block_table = self._make_buffer(
+(EngineCore pid=3510164)                        ^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/worker/block_table.py", line 265, in _make_buffer
+(EngineCore pid=3510164)     return CpuGpuBuffer(
+(EngineCore pid=3510164)            ^^^^^^^^^^^^^
+(EngineCore pid=3510164)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/utils.py", line 126, in __init__
+(EngineCore pid=3510164)     self.gpu = torch.zeros_like(self.cpu, device=device)
+(EngineCore pid=3510164)                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=3510164) torch.AcceleratorError: CUDA error: no kernel image is available for execution on the device
+(EngineCore pid=3510164) Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+(EngineCore pid=3510164) For more detailed error information, run with CUDA_LOG_FILE=stderr
+(EngineCore pid=3510164) 
+[rank0]:[W824 12:17:11.468480874 ProcessGroupNCCL.cpp:1624] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+(APIServer pid=3509209) INFO 08-24 12:17:12 [utils.py:612] [shutdown] Process manager: send sigterm to process EngineCore
+(APIServer pid=3509209) Traceback (most recent call last):
+(APIServer pid=3509209)   File "<frozen runpy>", line 198, in _run_module_as_main
+(APIServer pid=3509209)   File "<frozen runpy>", line 88, in _run_code
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 804, in <module>
+(APIServer pid=3509209)     uvloop.run(run_server(args))
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/uvloop/__init__.py", line 96, in run
+(APIServer pid=3509209)     return __asyncio.run(
+(APIServer pid=3509209)            ^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+(APIServer pid=3509209)     return runner.run(main)
+(APIServer pid=3509209)            ^^^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+(APIServer pid=3509209)     return self._loop.run_until_complete(task)
+(APIServer pid=3509209)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=3509209)     return await main
+(APIServer pid=3509209)            ^^^^^^^^^^
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 764, in run_server
+(APIServer pid=3509209)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 778, in run_server_worker
+(APIServer pid=3509209)     async with build_async_engine_client(
+(APIServer pid=3509209)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=3509209)     return await anext(self.gen)
+(APIServer pid=3509209)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 132, in build_async_engine_client
+(APIServer pid=3509209)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=3509209)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=3509209)     return await anext(self.gen)
+(APIServer pid=3509209)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/entrypoints/openai/api_server.py", line 168, in build_async_engine_client_from_engine_args
+(APIServer pid=3509209)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=3509209)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 220, in from_vllm_config
+(APIServer pid=3509209)     return cls(
+(APIServer pid=3509209)            ^^^^
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/async_llm.py", line 149, in __init__
+(APIServer pid=3509209)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=3509209)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=3509209)     return func(*args, **kwargs)
+(APIServer pid=3509209)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 139, in make_async_mp_client
+(APIServer pid=3509209)     return AsyncMPClient(*client_args)
+(APIServer pid=3509209)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=3509209)     return func(*args, **kwargs)
+(APIServer pid=3509209)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 987, in __init__
+(APIServer pid=3509209)     super().__init__(
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/core_client.py", line 609, in __init__
+(APIServer pid=3509209)     with launch_core_engines(
+(APIServer pid=3509209)   File "/usr/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=3509209)     next(self.gen)
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1194, in launch_core_engines
+(APIServer pid=3509209)     wait_for_engine_startup(
+(APIServer pid=3509209)   File "/home/mp/Projekte/vllm-bench/.venv/lib/python3.12/site-packages/vllm/v1/engine/utils.py", line 1253, in wait_for_engine_startup
+(APIServer pid=3509209)     raise RuntimeError(
+(APIServer pid=3509209) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}

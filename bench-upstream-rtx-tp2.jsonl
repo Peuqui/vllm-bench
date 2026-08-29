@@ -1,0 +1,12 @@
+{"completion_tokens": 1010, "ttft_s": 1.365, "decode_s": 24.055, "decode_tok_s": 41.9, "cell": "math", "seed": 1001, "label": "upstream-plain-rtx-tp2", "profile": "ninfer"}
+{"completion_tokens": 912, "ttft_s": 0.176, "decode_s": 21.511, "decode_tok_s": 42.4, "cell": "math", "seed": 2002, "label": "upstream-plain-rtx-tp2", "profile": "ninfer"}
+{"completion_tokens": 826, "ttft_s": 0.176, "decode_s": 19.455, "decode_tok_s": 42.4, "cell": "math", "seed": 3003, "label": "upstream-plain-rtx-tp2", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.17, "decode_s": 100.115, "decode_tok_s": 40.9, "cell": "code", "seed": 1001, "label": "upstream-plain-rtx-tp2", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.15, "decode_s": 100.122, "decode_tok_s": 40.9, "cell": "code", "seed": 2002, "label": "upstream-plain-rtx-tp2", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.149, "decode_s": 100.119, "decode_tok_s": 40.9, "cell": "code", "seed": 3003, "label": "upstream-plain-rtx-tp2", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.149, "decode_s": 100.115, "decode_tok_s": 40.9, "cell": "prose", "seed": 1001, "label": "upstream-plain-rtx-tp2", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.149, "decode_s": 100.118, "decode_tok_s": 40.9, "cell": "prose", "seed": 2002, "label": "upstream-plain-rtx-tp2", "profile": "ninfer"}
+{"completion_tokens": 3038, "ttft_s": 0.149, "decode_s": 73.394, "decode_tok_s": 41.4, "cell": "prose", "seed": 3003, "label": "upstream-plain-rtx-tp2", "profile": "ninfer"}
+# upstream-plain-rtx-tp2 math: 42.2 ± 0.2 tok/s (n=3)
+# upstream-plain-rtx-tp2 code: 40.9 ± 0.0 tok/s (n=3)
+# upstream-plain-rtx-tp2 prose: 41.1 ± 0.2 tok/s (n=3)

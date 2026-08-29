@@ -1,0 +1,12 @@
+{"completion_tokens": 4096, "ttft_s": 0.649, "decode_s": 82.237, "decode_tok_s": 49.8, "cell": "math", "seed": 1001, "label": "llamacpp-122b-q8-5gpu", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.454, "decode_s": 85.579, "decode_tok_s": 47.9, "cell": "math", "seed": 2002, "label": "llamacpp-122b-q8-5gpu", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.543, "decode_s": 84.565, "decode_tok_s": 48.4, "cell": "math", "seed": 3003, "label": "llamacpp-122b-q8-5gpu", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.703, "decode_s": 90.304, "decode_tok_s": 45.3, "cell": "code", "seed": 1001, "label": "llamacpp-122b-q8-5gpu", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.455, "decode_s": 87.596, "decode_tok_s": 46.7, "cell": "code", "seed": 2002, "label": "llamacpp-122b-q8-5gpu", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.525, "decode_s": 83.394, "decode_tok_s": 49.1, "cell": "code", "seed": 3003, "label": "llamacpp-122b-q8-5gpu", "profile": "ninfer"}
+{"completion_tokens": 1526, "ttft_s": 0.698, "decode_s": 35.055, "decode_tok_s": 43.5, "cell": "prose", "seed": 1001, "label": "llamacpp-122b-q8-5gpu", "profile": "ninfer"}
+{"completion_tokens": 2226, "ttft_s": 0.409, "decode_s": 49.352, "decode_tok_s": 45.1, "cell": "prose", "seed": 2002, "label": "llamacpp-122b-q8-5gpu", "profile": "ninfer"}
+{"completion_tokens": 1688, "ttft_s": 0.492, "decode_s": 38.101, "decode_tok_s": 44.3, "cell": "prose", "seed": 3003, "label": "llamacpp-122b-q8-5gpu", "profile": "ninfer"}
+# llamacpp-122b-q8-5gpu math: 48.7 ± 0.9 tok/s (n=3)
+# llamacpp-122b-q8-5gpu code: 47.0 ± 1.9 tok/s (n=3)
+# llamacpp-122b-q8-5gpu prose: 44.3 ± 0.8 tok/s (n=3)

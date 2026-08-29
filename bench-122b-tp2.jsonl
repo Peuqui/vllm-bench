@@ -1,0 +1,12 @@
+{"completion_tokens": 4096, "ttft_s": 1.777, "decode_s": 139.29, "decode_tok_s": 29.4, "cell": "math", "seed": 1001, "label": "upstream-122b-gptq-tp2-mtp3", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.335, "decode_s": 138.032, "decode_tok_s": 29.7, "cell": "math", "seed": 2002, "label": "upstream-122b-gptq-tp2-mtp3", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.335, "decode_s": 138.745, "decode_tok_s": 29.5, "cell": "math", "seed": 3003, "label": "upstream-122b-gptq-tp2-mtp3", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 1.273, "decode_s": 149.122, "decode_tok_s": 27.5, "cell": "code", "seed": 1001, "label": "upstream-122b-gptq-tp2-mtp3", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.32, "decode_s": 144.391, "decode_tok_s": 28.4, "cell": "code", "seed": 2002, "label": "upstream-122b-gptq-tp2-mtp3", "profile": "ninfer"}
+{"completion_tokens": 4096, "ttft_s": 0.319, "decode_s": 149.876, "decode_tok_s": 27.3, "cell": "code", "seed": 3003, "label": "upstream-122b-gptq-tp2-mtp3", "profile": "ninfer"}
+{"completion_tokens": 1539, "ttft_s": 0.317, "decode_s": 57.763, "decode_tok_s": 26.6, "cell": "prose", "seed": 1001, "label": "upstream-122b-gptq-tp2-mtp3", "profile": "ninfer"}
+{"completion_tokens": 1510, "ttft_s": 0.305, "decode_s": 58.256, "decode_tok_s": 25.9, "cell": "prose", "seed": 2002, "label": "upstream-122b-gptq-tp2-mtp3", "profile": "ninfer"}
+{"completion_tokens": 1627, "ttft_s": 0.299, "decode_s": 58.906, "decode_tok_s": 27.6, "cell": "prose", "seed": 3003, "label": "upstream-122b-gptq-tp2-mtp3", "profile": "ninfer"}
+# upstream-122b-gptq-tp2-mtp3 math: 29.5 ± 0.2 tok/s (n=3)
+# upstream-122b-gptq-tp2-mtp3 code: 27.7 ± 0.5 tok/s (n=3)
+# upstream-122b-gptq-tp2-mtp3 prose: 26.7 ± 0.9 tok/s (n=3)

@@ -1,0 +1,29 @@
+{"completion_tokens": 876, "ttft_s": 0.33, "decode_s": 20.249, "decode_tok_s": 43.2, "cell": "math", "seed": 1001, "label": "rtx-nvfp4-k0", "profile": "ninfer"}
+{"completion_tokens": 646, "ttft_s": 0.326, "decode_s": 14.886, "decode_tok_s": 43.3, "cell": "math", "seed": 2002, "label": "rtx-nvfp4-k0", "profile": "ninfer"}
+{"completion_tokens": 1024, "ttft_s": 0.271, "decode_s": 23.753, "decode_tok_s": 43.1, "cell": "code", "seed": 1001, "label": "rtx-nvfp4-k0", "profile": "ninfer"}
+{"completion_tokens": 1024, "ttft_s": 0.265, "decode_s": 23.761, "decode_tok_s": 43.1, "cell": "code", "seed": 2002, "label": "rtx-nvfp4-k0", "profile": "ninfer"}
+# rtx-nvfp4-k0 math: 43.2 ± 0.0 tok/s (n=2)
+# rtx-nvfp4-k0 code: 43.1 ± 0.0 tok/s (n=2)
+{"label":"nvfp4","k":0,"status":"ok","probe":"17 mal 23 ergibt 391.","draft_accepted":""}
+{"completion_tokens": 929, "ttft_s": 0.319, "decode_s": 76.125, "decode_tok_s": 12.2, "cell": "math", "seed": 1001, "label": "rtx-awq-k0", "profile": "ninfer"}
+{"completion_tokens": 790, "ttft_s": 0.309, "decode_s": 64.532, "decode_tok_s": 12.2, "cell": "math", "seed": 2002, "label": "rtx-awq-k0", "profile": "ninfer"}
+{"completion_tokens": 1024, "ttft_s": 0.304, "decode_s": 83.834, "decode_tok_s": 12.2, "cell": "code", "seed": 1001, "label": "rtx-awq-k0", "profile": "ninfer"}
+{"completion_tokens": 1024, "ttft_s": 0.228, "decode_s": 83.826, "decode_tok_s": 12.2, "cell": "code", "seed": 2002, "label": "rtx-awq-k0", "profile": "ninfer"}
+# rtx-awq-k0 math: 12.2 ± 0.0 tok/s (n=2)
+# rtx-awq-k0 code: 12.2 ± 0.0 tok/s (n=2)
+{"label":"awq","k":0,"status":"ok","probe":"17 mal 23 ergibt 391.","draft_accepted":""}
+{"completion_tokens": 668, "ttft_s": 0.348, "decode_s": 8.199, "decode_tok_s": 81.4, "cell": "math", "seed": 1001, "label": "rtx-nvfp4-k7", "profile": "ninfer"}
+{"completion_tokens": 862, "ttft_s": 0.32, "decode_s": 11.226, "decode_tok_s": 76.7, "cell": "math", "seed": 2002, "label": "rtx-nvfp4-k7", "profile": "ninfer"}
+{"completion_tokens": 1024, "ttft_s": 0.316, "decode_s": 17.746, "decode_tok_s": 57.6, "cell": "code", "seed": 1001, "label": "rtx-nvfp4-k7", "profile": "ninfer"}
+{"completion_tokens": 1024, "ttft_s": 0.318, "decode_s": 20.797, "decode_tok_s": 49.2, "cell": "code", "seed": 2002, "label": "rtx-nvfp4-k7", "profile": "ninfer"}
+# rtx-nvfp4-k7 math: 79.1 ± 2.4 tok/s (n=2)
+# rtx-nvfp4-k7 code: 53.4 ± 4.2 tok/s (n=2)
+{"label":"nvfp4","k":7,"status":"ok","probe":"17 mal 23 ergibt 391.","draft_accepted":"7063.0/2582.0/"}
+{"completion_tokens": 723, "ttft_s": 0.365, "decode_s": 20.11, "decode_tok_s": 35.9, "cell": "math", "seed": 1001, "label": "rtx-awq-k7", "profile": "ninfer"}
+{"completion_tokens": 701, "ttft_s": 0.359, "decode_s": 16.999, "decode_tok_s": 41.2, "cell": "math", "seed": 2002, "label": "rtx-awq-k7", "profile": "ninfer"}
+{"completion_tokens": 1024, "ttft_s": 0.353, "decode_s": 27.667, "decode_tok_s": 37.0, "cell": "code", "seed": 1001, "label": "rtx-awq-k7", "profile": "ninfer"}
+{"completion_tokens": 1024, "ttft_s": 0.355, "decode_s": 29.436, "decode_tok_s": 34.8, "cell": "code", "seed": 2002, "label": "rtx-awq-k7", "profile": "ninfer"}
+# rtx-awq-k7 math: 38.5 ± 2.7 tok/s (n=2)
+# rtx-awq-k7 code: 35.9 ± 1.1 tok/s (n=2)
+{"label":"awq","k":7,"status":"ok","probe":"17 mal 23 ergibt 391.","draft_accepted":"5894.0/2655.0/"}
+RTX-MATRIX FERTIG
